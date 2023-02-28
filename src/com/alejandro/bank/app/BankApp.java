@@ -7,11 +7,11 @@ public class BankApp {
     public static void main(String[] args) {
         Person diana = new Person();
         diana.id = 357;
-        diana.name = "Diana";
+        diana.name = "Diana Monsalve";
 
         Person alvaro = new Person();
         alvaro.id = 149;
-        alvaro.name = "Alvaro";
+        alvaro.name = "Alvaro Restrepo";
 
         BankAccount dianaAccount = new BankAccount();
         dianaAccount.holder = diana;
