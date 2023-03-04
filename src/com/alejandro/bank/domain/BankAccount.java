@@ -8,6 +8,19 @@ public class BankAccount {
     public Bank bank;
     public boolean isActive;
 
+    public BankAccount(int number, double balance, String type, Person holder, Bank bank) {
+        this(number, type, holder);
+        this.balance = balance;
+        this.bank = bank;
+    }
+
+    public BankAccount(int number, String type, Person holder) {
+        this.number = number;
+        this.type = type;
+        this.holder = holder;
+        this.isActive = true;
+    }
+
     public boolean deposit(double moneyToDeposit) {
         if (this.isActive == true) {
             this.balance += moneyToDeposit;

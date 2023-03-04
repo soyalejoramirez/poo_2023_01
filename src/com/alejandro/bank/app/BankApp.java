@@ -5,21 +5,11 @@ import com.alejandro.bank.domain.Person;
 
 public class BankApp {
     public static void main(String[] args) {
-        Person diana = new Person();
-        diana.id = 357;
-        diana.name = "Diana Monsalve";
+        Person diana = new Person(357, "Diana Monsalve");
+        Person alvaro = new Person("Alvaro Restrepo");
 
-        Person alvaro = new Person();
-        alvaro.id = 149;
-        alvaro.name = "Alvaro Restrepo";
-
-        BankAccount dianaAccount = new BankAccount();
-        dianaAccount.holder = diana;
-        dianaAccount.isActive = true;
-
-        BankAccount alvaroAccount = new BankAccount();
-        alvaroAccount.holder = alvaro;
-        alvaroAccount.isActive = true;
+        BankAccount dianaAccount = new BankAccount(123, "A", diana);
+        BankAccount alvaroAccount = new BankAccount(321, "A", alvaro);
 
         dianaAccount.deposit(50);
 
