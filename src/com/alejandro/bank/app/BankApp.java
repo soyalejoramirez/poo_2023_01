@@ -21,4 +21,15 @@ public class BankApp {
         System.out.println(dianaAccount.getBalance());
         System.out.println(alvaroAccount.getBalance());
     }
+
+//    public static void main(String[] args) {
+//        Person alejo = new Person("Alejo");
+//        Person andrea = new Person("Andrea");
+//
+//        andrea = alejo;
+//        andrea.name = "Gregorio";
+//
+//        System.out.println(alejo.name);
+//        System.out.println(andrea.name);
+//    }
 }
