@@ -1,8 +1,8 @@
 package com.alejandro.bank.domain;
 
 public class Person {
-    public int id;
-    public String name;
+    private int id;
+    private String name;
 
     public Person(String name) {
         this.name = name;
@@ -11,5 +11,17 @@ public class Person {
     public Person(int id, String name) {
         this(name);
         this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getId() {
+        return id;
     }
 }
